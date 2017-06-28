@@ -52,15 +52,16 @@
         <div class="lightbox" id="fl1">
             <h3>Let's Talk</h3>
             <p>I'm currently only looking for long term projects such as retainers, employment, partnerships &amp; well compensated freelancing.</p>
-            <form data-forge-name="Contact Me">
+            <form  action="https://formspree.io/your@email.com"
+      method="POST">
                 <div class="row">
                     <div class="six columns">
                         <label for="exampleEmailInput">Your email</label>
-                        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput" data-forge-name="Email">
+                        <input class="u-full-width" type="email" placeholder="user@mail.com" id="exampleEmailInput" name="_replyto" >
                     </div>
                     <div class="six columns">
                         <label for="exampleRecipientInput">Reason for contacting</label>
-                        <select class="u-full-width" id="exampleRecipientInput" data-forge-name="Reason">
+                        <select class="u-full-width" id="exampleRecipientInput" name="_subject">
             <option value="Work Request">Work Request</option>
             <option value="General Questions">General Questions</option>
             <option value="DMCA">DMCA</option>
@@ -68,8 +69,9 @@
                     </div>
                 </div>
                 <label for="exampleMessage">Message</label>
-                <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage" data-forge-name="Message"></textarea>
-                <input class="button-primary" type="submit" value="Submit">
+                <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea><br>
+                <input type="hidden" name="_next" value="//site.io/thanks.html" />
+                <input class="button-primary" type="submit" value="Send">
             </form>
         </div>
     </hidden>
