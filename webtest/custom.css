@@ -1,5 +1,12 @@
+.row {
+  min-height: 200px;
+}
+
+
+
 .display-4 {
   color:white;
+padding-top: 3rem;
 }
 
 .lead {
@@ -7,19 +14,62 @@
 }
 
 .jumbotron {
-
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-min-height:600px;
+  text-align: center;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+min-height:400px;
 background: #43C6AC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to bottom, #000046, #1cb5e0);
+background: linear-gradient(to bottom, #000046, #1cb5e0);
+
 }
 
-.display-4 {
-  padding-top:5rem;
+h2 {
+  z-index: 9999;
 }
 
 .darkblue {
-  background-color: #191654;
+  background-color: #000046;
+}
+
+
+
+.navbar-inverse .navbar-toggler {
+    border-color: rgba(255,255,255,.0); }
+
+.navbar-inverse .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+body {
+  background-color:#000046;
+color:white;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+font-size: 4rem;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.floatright {
+  display: inline;
 }
